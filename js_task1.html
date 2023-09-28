@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html">GO BACK</a>
+    <script>
+    let a = 32243;
+    let temp = a;
+    let result = 0;
+    while(temp>0){
+    rightmost = temp%10;
+    result = result*10 + rightmost;
+    temp = Math.floor(temp/10);
+    }
+    document.write("Example x = "+a)
+    document.write("<br>");
+    document.write("Expected Output = " + result)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html">GO BACK</a>
+    <input type="button" onClick="showDate()" Value="show date" style="margin-top: 5px;"/><br>
+    <p><span id="result1"></span></p>
+    <input type="button" onClick="showTime()" Value="show time" style="margin-top: 5px;"/><br>
+    <p><span id="result2"></span></p>
+    <script>
+        function showDate(){
+            var date = new Date();
+	        var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	        document.getElementById("result1").innerHTML = current_date;
+        }
+        function showTime(){
+            var date = new Date();
+            document.getElementById("result2").innerHTML = date;
+        }
+    </script>    
+</body>
+</html>
